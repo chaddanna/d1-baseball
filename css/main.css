@@ -99,8 +99,8 @@ textarea {
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
- -webkit-flex-direction: row;
- flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-container-center {
@@ -124,20 +124,48 @@ textarea {
   float: right !important;
 }
 
+.fixed-position {
+  position: fixed;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 1000px;
+}
+
 body {
   background: rgba(239, 239, 239, 1.0);
   padding-top: 115px;
 }
 
+.ad {
+  width: 728px;
+  margin: 18px auto;
+  max-width: 90%;
+}
+
+.ad img {
+  width: 100%;
+}
+
 header {
   width: 100%;
   overflow: hidden;
+}
+
+header .fixed-position {
+  left: 0;
+  top: 0;
+  width: 100%;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
-  position: fixed;
-  top: 0;
-  left: 0;
+  overflow: hidden;
 }
 
 header .next {
@@ -230,23 +258,7 @@ header .score-tables .winner .mark:before {
   text-align: right;
 }
 
-.ad {
-  width: 728px;
-  margin: 18px auto;
-  max-width: 90%;
-}
-
-.ad img {
-  width: 100%;
-}
-
-#wrap {
-  margin: 0 auto;
-  max-width: 90%;
-  width: 1000px;
-}
-
-#wrap nav.nav-social a {
+header nav.nav-social a {
   color: rgba(116, 115, 116, 1.0);
   font-size: 14px;
   padding: 2px;
@@ -254,7 +266,7 @@ header .score-tables .winner .mark:before {
   text-transform: uppercase;
 }
 
-#wrap nav.nav-account a {
+header nav.nav-account a {
   color: rgba(116, 115, 116, 1.0);
   font-size: 12px;
   padding: 4px;
@@ -262,14 +274,14 @@ header .score-tables .winner .mark:before {
   text-transform: uppercase;
 }
 
-#wrap nav.nav-main {
+header nav.nav-main {
   background: rgba(43, 113, 56, 1.0);
   margin-top: 10px;
   overflow: hidden;
   padding: 20px 20px;
 }
 
-#wrap nav.nav-main a {
+header nav.nav-main a {
   color: rgba(255, 255, 255, 1.0);
   font-size: 18px;
   line-height: 18px;
@@ -277,15 +289,21 @@ header .score-tables .winner .mark:before {
   text-decoration: none;
 }
 
-#wrap nav.nav-main .pull-right a {
+header nav.nav-main .pull-right a {
   font-weight: bold;
+}
+
+#wrap {
 }
 
 #wrap img {
   width: 100%;
 }
 
-#wrap .container {
+#wrap.container {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 1000px;
   background: rgba(255, 255, 255, 1.0);
   display: block;
 }
