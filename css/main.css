@@ -226,6 +226,262 @@ header .score-tables .winner .mark:before {
   text-align: right;
 }
 
+#wrap {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 1000px;
+}
+
+.ad {
+  max-width: 728px;
+  margin: 18px auto;
+}
+
+.ad img {
+  width: 100%;
+}
+
+#wrap nav.nav-social a {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 14px;
+  padding: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#wrap nav.nav-account a {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 12px;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#wrap nav.nav-main {
+  background: rgba(43, 113, 56, 1.0);
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 20px 20px;
+}
+
+#wrap nav.nav-main a {
+  color: rgba(255, 255, 255, 1.0);
+  font-size: 18px;
+  line-height: 18px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+#wrap nav.nav-main .pull-right a {
+  font-weight: bold;
+}
+
+#wrap img {
+  width: 100%;
+}
+
+#wrap .container {
+  background: rgba(255, 255, 255, 1.0);
+  display: block;
+}
+
+#wrap main {
+  overflow: hidden;
+}
+
+#wrap main .headline-photo {
+  margin: 0;
+  width: 100%;
+}
+
+#wrap main .headline-photo span {
+  color: rgba(155, 155, 155, 1.0);
+  float: right;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+#wrap main .content {
+  margin-left: 30px;
+}
+
+#wrap main .post-content {
+  border-bottom: 2px solid rgba(239, 239, 239, 1.0);
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+#wrap main h1.post-title {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+
+#wrap main .categories {
+  color: rgba(43, 113, 56, 1.0);
+  font-size: 14px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+#wrap main .post-meta {
+  color: rgba(155, 155, 155, 1.0);
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+#wrap main .post-content p {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 0;
+}
+
+#wrap aside, #wrap .aside {
+  padding: 0 30px 0 20px;
+  width: 300px;
+}
+
+#wrap .teasers .row {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#wrap .teasers .teaser-item {
+  width: 47.5%;
+  float: left;
+}
+
+#wrap .teasers .teaser-item + .teaser-item {
+  margin-left: 5%;
+}
+
+#wrap .teasers figure {
+  margin: 0;
+}
+
+#wrap .teasers figcaption {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 24px;
+  margin-top: 6px;
+}
+
+#wrap main .ad {
+  border-bottom: 2px solid rgba(43, 113, 56, 1.0);
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+
+#wrap main .label {
+  color: rgba(43, 113, 56, 1.0);
+  font-size: 14px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#wrap .trending {
+  border-bottom: 2px solid rgba(239, 239, 239, 1.0);
+  margin-bottom: 30px;
+}
+
+#wrap .trending .row {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#wrap .trending .trending-item {
+  width: 47.5%;
+  float: left;
+}
+
+#wrap .trending .trending-item + .trending-item {
+  margin-left: 5%;
+}
+
+#wrap .trending figure {
+  margin: 0;
+}
+
+#wrap .trending h2 {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 24px;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+#wrap .trending span {
+  color: rgba(155, 155, 155, 1.0);
+  display: block;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 14px;
+  margin-top: 10px;
+}
+
+#wrap .trending p {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 20px;
+  margin-top: 12px;
+}
+
+#wrap .more-stories {
+  border-bottom: 2px solid rgba(239, 239, 239, 1.0);
+  margin-bottom: 30px;
+}
+
+#wrap .more-stories .row {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#wrap .more-stories .more-stories-item figure {
+  width: 47.5%;
+  float: left;
+  margin: 0;
+}
+
+#wrap .more-stories .stories-content{
+  margin-left: 5%;
+  float: left;
+  width: 47.5%;
+}
+
+#wrap .more-stories h2 {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 24px;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+#wrap .more-stories span {
+  color: rgba(155, 155, 155, 1.0);
+  display: block;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 14px;
+  margin-top: 10px;
+}
+
+#wrap .more-stories p {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 20px;
+  margin-top: 12px;
+}
 
 /* ==========================================================================
    Helper classes
