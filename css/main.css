@@ -126,6 +126,7 @@ textarea {
 
 body {
   background: rgba(239, 239, 239, 1.0);
+  padding-top: 115px;
 }
 
 header {
@@ -134,6 +135,9 @@ header {
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 header .next {
@@ -226,19 +230,20 @@ header .score-tables .winner .mark:before {
   text-align: right;
 }
 
-#wrap {
-  margin: 0 auto;
-  max-width: 90%;
-  width: 1000px;
-}
-
 .ad {
-  max-width: 728px;
+  width: 728px;
   margin: 18px auto;
+  max-width: 90%;
 }
 
 .ad img {
   width: 100%;
+}
+
+#wrap {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 1000px;
 }
 
 #wrap nav.nav-social a {
