@@ -1,4 +1,5 @@
 $(function() {
+  retinajs();
   $('.slick-slider').slick({
     arrows: false,
     infinite: true,
