@@ -166,6 +166,7 @@ header .fixed-position {
   -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   overflow: hidden;
+  z-index: 9;
 }
 
 header .next {
@@ -360,11 +361,6 @@ header nav.nav-main .pull-right a {
   margin-bottom: 0;
 }
 
-#wrap aside, #wrap .aside {
-  padding: 0 30px 0 20px;
-  width: 300px;
-}
-
 #wrap .teasers .row {
   margin-bottom: 30px;
   overflow: hidden;
@@ -398,12 +394,16 @@ header nav.nav-main .pull-right a {
 }
 
 
-#wrap main .label {
+#wrap .label {
   color: rgba(43, 113, 56, 1.0);
   font-size: 14px;
   font-weight: bolder;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+#wrap .label.red {
+  color: rgba(208, 49, 69, 1.0);
 }
 
 #wrap .trending {
@@ -500,6 +500,109 @@ header nav.nav-main .pull-right a {
   font-weight: lighter;
   line-height: 20px;
   margin-top: 12px;
+}
+
+aside, .aside {
+  padding: 22px 30px 0 20px;
+  width: 300px;
+}
+
+aside section + section, .aside section + section {
+  padding: 30px 0 0 0;
+}
+
+aside section h2, .aside section h2 {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+aside #search form, .aside #search form {
+  position: relative;
+}
+
+aside #search input, .aside #search input {
+  border: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(215, 215, 215, 1.0);
+  padding: 6px;
+  width: 100%;
+}
+
+aside #search button, .aside #search button {
+  border: 0;
+  background: 0;
+  position: absolute;
+  top: 2px;
+  right: -10px;
+  color: rgba(43, 113, 56, 1.0);
+}
+
+aside ul, .aside ul {
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li, .aside ul li {
+  list-style: none;
+  line-height: 24px;
+}
+
+aside li a, .aside li a {
+  color: rgba(116, 115, 116, 1.0);
+  text-decoration: none;
+}
+
+aside li a:hover, .aside li a:hover {
+  color: rgba(43, 113, 56, 1.0);
+}
+
+aside .ad, .aside .ad {
+  max-width: 100%;
+}
+
+aside .team-logo, .aside .team-logo {
+  max-width: 18px;
+}
+
+aside ol, .aside ol {
+  margin: 0;
+  padding: 0 20px;
+  font-weight: bold;
+  counter-reset: item;
+  list-style-type: none;
+}
+
+aside ol li, .aside ol li {
+  line-height: 26px;
+  display: block;
+}
+
+aside ol li:before, .aside ol li:before {
+  content: counter(item) "  ";
+  counter-increment: item;
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
+}
+
+aside ol li span, .aside ol li span {
+  font-weight: normal;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+aside #top-25 span {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+aside #top-25 > span {
+  color: rgba(116, 115, 116, 1.0);
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 footer {
