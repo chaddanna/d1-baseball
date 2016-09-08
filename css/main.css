@@ -277,6 +277,7 @@ header .score-table table {
 
 header .score-table .score-status {
   font-size: 10px;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -285,7 +286,13 @@ header .team-logo img{
 }
 
 header .score-tables td {
+  color: rgba(116, 115, 116, 1.0);
   font-size: 14px;
+  font-weight: 700;
+}
+
+header .score-tables .winner td {
+  color: rgba(74, 74, 74, 1.0);
 }
 
 header .score-tables .score {
