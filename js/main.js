@@ -1,5 +1,15 @@
 $(function() {
   retinajs();
+
+  $("#sticker").sticky({
+    topSpacing: 105
+  }).on('sticky-end', function() {
+    //$("#sticker").addClass("sticky-end");
+    //setTimeout(function(){
+    //  $("#sticker").removeClass("sticky-end");
+    //}, 1000);
+  });
+
   $('.slick-slider').slick({
     arrows: false,
     infinite: true,
