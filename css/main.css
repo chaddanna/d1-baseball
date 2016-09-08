@@ -97,6 +97,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, figcaption {
   font-family: "franklin-gothic-urw", sans-serif;
+  color: rgba(74, 74, 74, 1.0);
 }
 
 .flex-container {
@@ -143,6 +144,41 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, figcaption {
   width: 1000px;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
 body {
   background: rgba(239, 239, 239, 1.0);
   padding-top: 115px;
@@ -164,14 +200,13 @@ header {
 }
 
 header .fixed-position {
-  left: 0;
-  top: 0;
   width: 100%;
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   overflow: hidden;
-  z-index: 9;
+  top:0;
+  z-index: 10 !important;
 }
 
 header .next {
@@ -264,12 +299,8 @@ header .score-tables .winner .mark:before {
   text-align: right;
 }
 
-header nav.nav-social a {
-  color: rgba(116, 115, 116, 1.0);
-  font-size: 14px;
-  padding: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
+header nav.nav-account, header nav.nav-social {
+  margin-bottom: 10px;
 }
 
 header nav.nav-account a {
@@ -280,11 +311,40 @@ header nav.nav-account a {
   text-transform: uppercase;
 }
 
+header nav.nav-social a {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 14px;
+  padding: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 header nav.nav-main {
   background: rgba(43, 113, 56, 1.0);
-  margin-top: 10px;
+  height: 22px;
+  width: auto !important;
   overflow: hidden;
   padding: 20px 20px;
+  left:100px;
+  right:100px;
+  -webkit-transition: left 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000), right 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -moz-transition: left 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000), right 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -o-transition: left 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000), right 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  transition: left 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000), right 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -webkit-transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -moz-transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  -o-transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+header .is-sticky nav.nav-main {
+  margin-top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10 !important;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
 }
 
 header nav.nav-main a {
@@ -299,9 +359,6 @@ header nav.nav-main .pull-right a {
   font-weight: bold;
 }
 
-#wrap {
-}
-
 #wrap img {
   width: 100%;
 }
@@ -309,6 +366,11 @@ header nav.nav-main .pull-right a {
 #wrap {
   background: rgba(255, 255, 255, 1.0);
   display: block;
+}
+
+#wrap .date {
+  color: rgba(155, 155, 155, 1.0);
+  font-size: 14px;
 }
 
 #wrap main {
@@ -339,11 +401,6 @@ header nav.nav-main .pull-right a {
 
 #wrap main h1.post-title {
   color: rgba(74, 74, 74, 1.0);
-  font-size: 48px;
-  font-weight: bolder;
-  line-height: 48px;
-  margin-top: 24px;
-  margin-bottom: 6px;
 }
 
 #wrap main .categories {
@@ -359,11 +416,9 @@ header nav.nav-main .pull-right a {
   margin-left: 10px;
 }
 
-#wrap main .post-content p {
-  color: rgba(74, 74, 74, 1.0);
+#wrap main p.main {
   font-size: 22px;
   line-height: 27px;
-  margin-bottom: 0;
 }
 
 #wrap .teasers .row {
@@ -384,11 +439,7 @@ header nav.nav-main .pull-right a {
   margin: 0;
 }
 
-#wrap .teasers figcaption {
-  color: rgba(74, 74, 74, 1.0);
-  font-size: 24px;
-  font-weight: bolder;
-  line-height: 24px;
+#wrap .teasers h3 {
   margin-top: 6px;
 }
 
@@ -398,17 +449,12 @@ header nav.nav-main .pull-right a {
   padding-bottom: 30px;
 }
 
-
-#wrap .label {
+#wrap h4.category {
   color: rgba(43, 113, 56, 1.0);
-  font-family: "franklin-gothic-urw", sans-serif;
-  font-size: 14px;
-  font-weight: bolder;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  margin-top: 0;
 }
 
-#wrap .label.red {
+#wrap h4.category.red {
   color: rgba(208, 49, 69, 1.0);
 }
 
@@ -435,13 +481,8 @@ header nav.nav-main .pull-right a {
   margin: 0;
 }
 
-#wrap .trending h2 {
-  color: rgba(74, 74, 74, 1.0);
-  font-size: 24px;
-  font-weight: bolder;
-  line-height: 24px;
+#wrap .trending h3 {
   margin-top: 6px;
-  margin-bottom: 0;
 }
 
 #wrap .trending span {
@@ -514,13 +555,14 @@ aside, .aside {
 }
 
 aside section + section, .aside section + section {
-  padding: 30px 0 0 0;
+  border-top: 2px solid rgba(43, 113, 56, 1.0);
+  margin-top: 30px;
+  padding-top: 30px;
 }
 
 aside section h2, .aside section h2 {
-  color: rgba(74, 74, 74, 1.0);
-  font-size: 36px;
   margin-bottom: 6px;
+  margin-top: 20px;
 }
 
 aside #search form, .aside #search form {
@@ -531,17 +573,17 @@ aside #search input, .aside #search input {
   border: 0;
   border-radius: 6px;
   border: 1px solid rgba(215, 215, 215, 1.0);
-  padding: 6px;
-  width: 100%;
+  padding: 2%;
+  width: 96%;
 }
 
 aside #search button, .aside #search button {
   border: 0;
   background: 0;
-  position: absolute;
-  top: 2px;
-  right: -10px;
   color: rgba(43, 113, 56, 1.0);
+  position: absolute;
+  top: 3px;
+  right: 0;
 }
 
 aside ul, .aside ul {
@@ -550,6 +592,7 @@ aside ul, .aside ul {
 }
 
 aside ul li, .aside ul li {
+  color: rgba(116, 115, 116, 1.0);
   list-style: none;
   line-height: 24px;
 }
@@ -573,42 +616,49 @@ aside .team-logo, .aside .team-logo {
 
 aside ol, .aside ol {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   font-weight: bold;
   counter-reset: item;
   list-style-type: none;
 }
 
 aside ol li, .aside ol li {
-  line-height: 26px;
+  color: rgba(116, 115, 116, 1.0);
   display: block;
+  line-height: 30px;
 }
 
 aside ol li:before, .aside ol li:before {
   content: counter(item) "  ";
   counter-increment: item;
   display: inline-block;
-  width: 30px;
+  width: 40px;
   vertical-align: middle;
 }
 
 aside ol li span, .aside ol li span {
+  color: rgba(74, 74, 74, 1.0);
   font-weight: normal;
   margin-left: 10px;
   vertical-align: middle;
 }
 
-aside #top-25 span {
-  color: rgba(116, 115, 116, 1.0);
-  font-size: 16px;
-  line-height: 26px;
-}
-
-aside #top-25 > span {
+aside #top-25 hgroup span {
   color: rgba(116, 115, 116, 1.0);
   display: block;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+}
+
+aside #top-25 hgroup span + span {
+  color: rgba(116, 115, 116, 1.0);
   font-size: 14px;
   line-height: 16px;
+}
+
+aside #player-power-ranking {
+
 }
 
 footer {
