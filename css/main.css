@@ -99,7 +99,7 @@ textarea {
   Custom defaults
 */
 
-h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, figcaption {
+h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, figcaption, select, option, button {
   font-family: "franklin-gothic-urw", sans-serif;
   color: rgba(74, 74, 74, 1.0);
 }
@@ -721,6 +721,193 @@ header nav.nav-main .pull-right a {
 #wrap.article .related {
   border: 5px solid rgba(43, 113, 56, 1.0);
 }
+
+/*
+  scores styles
+*/
+
+#wrap.scores main .content {
+  margin-right: 30px;
+}
+
+#wrap.scores h1, #wrap.scores h3 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#wrap.scores hgroup a {
+  color: rgba(49, 172, 74, 1.0);
+  text-decoration: none;
+}
+
+#wrap.scores .filters {
+  padding: 20px 0;
+}
+
+#wrap.scores .filters label {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+#wrap.scores .select-style {
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 120px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(239, 239, 239, 1.0);
+  background: rgba(239, 239, 239, 1.0) url("../img/arrow-drop-green.png") no-repeat 94%;
+  border: 1px solid rgba(215, 215, 215, 1.0);
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 14px;
+  height: 26px;
+}
+
+#wrap.scores .select-style select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#wrap.scores .select-style select:focus {
+  outline: none;
+}
+
+#wrap.scores .filters select {
+}
+
+#wrap.scores .filters .date {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+#wrap.scores .row + .row {
+  margin-top: 20px;
+}
+
+#wrap.scores .score-set + .score-set {
+  border-top: 2px solid rgba(239, 239, 239, 1.0);
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+#wrap.scores .score-set h3 {
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+#wrap.scores .score-set-item {
+  width: 22.25%;
+}
+
+#wrap.scores .score-set-item > div {
+  padding: 5px;
+  border: 1px solid rgba(215, 215, 215, 1.0);
+}
+
+#wrap.scores .score-set:last-child {
+  margin-bottom: 20px;
+}
+
+#wrap.scores .score-set-item + .score-set-item {
+  margin-left: 2.0%;
+}
+
+#wrap.scores .score-set-item table {
+  width: 100%;
+}
+
+#wrap.scores .score-set-item thead {
+  background: rgba(239, 239, 239, 1.0);
+  text-transform: uppercase;
+}
+
+#wrap.scores .score-set-item thead td {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 12px;
+  padding: 6px 4px;
+}
+
+#wrap.scores .score-set-item thead.red {
+  background: rgba(208, 49, 69, 1.0);
+  text-transform: uppercase;
+}
+
+#wrap.scores .score-set-item thead.red td {
+  color: rgba(255, 255, 255, 1.0);
+}
+#wrap.scores .score-set-item td {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 14px;
+  padding: 2px 5px;
+  font-weight: 700;
+}
+
+#wrap.scores .score-set-item td:first-child {
+  width: 30px;
+}
+
+#wrap.scores .score-set-item tr td:last-child {
+  padding-right: 0;
+  text-align: right;
+  width: 10px;
+}
+
+#wrap.scores .score-set-item tr td:nth-child(3) {
+  text-align: right;
+}
+
+#wrap.scores .score-set-item img {
+  width: 16px;
+}
+
+#wrap.scores .winner .mark:before {
+    color: rgba(49, 172, 74, 1.0);
+    content: "\25C0";
+    font-size: 10px;
+    text-align: right;
+}
+
+#wrap.scores .winner td {
+  color: rgba(74, 74, 74, 1.0);
+}
+
+#wrap.scores .footer a {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 12px;
+  font-weight: 300;
+  padding: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#wrap.scores .footer a + a {
+  border-left: 1px solid rgba(116, 115, 116, 1.0);
+  padding-left: 6px;
+}
+
+#wrap.scores .note {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+
+
+
 /*
   Aside styles
 */
