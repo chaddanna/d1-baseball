@@ -28,7 +28,7 @@ $(function() {
     arrows: false,
     infinite: true,
     slidesToShow: 6,
-    slidesToScroll: 5,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1024,
