@@ -95,6 +95,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*
+  Custom defaults
+*/
+
 h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, figcaption {
   font-family: "franklin-gothic-urw", sans-serif;
   color: rgba(74, 74, 74, 1.0);
@@ -161,15 +165,19 @@ h3 {
   font-size: 24px;
   font-weight: bolder;
   line-height: 24px;
-  margin-top: 0;
   margin-bottom: 0;
 }
 
 h4 {
   font-size: 14px;
-  font-weight: bolder;
+  font-weight: 900;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 p {
@@ -193,6 +201,69 @@ body {
 .ad img {
   width: 100%;
 }
+
+/*
+  Tabs
+*/
+ul.tabs {
+  background: rgba(43, 113, 56, 1.0);
+	margin: 0px;
+	padding: 0px !important;
+	list-style: none;
+}
+ul.tabs li{
+	background: none;
+	color: rgba(255, 255, 255, 1.0);
+	cursor: pointer;
+	display: inline-block;
+  font-size: 14px;
+  font-weight: 900;
+	padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+ul.tabs li.current{
+	background: rgba(255, 255, 255, 1.0);
+	color: rgba(43, 113, 56, 1.0);
+}
+
+.tab-content{
+	display: none;
+	background: rgba(255, 255, 255, 1.0);
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+.tab-content h5 {
+  color: rgba(116, 115, 116, 1.0);
+  display: inline;
+}
+
+.tab-content span {
+  color: rgba(155, 155, 155, 1.0);
+  font-size: 14px;
+}
+
+.tab-content a {
+  display: block;
+  text-decoration: none;
+}
+
+.tab-content a:hover h5, .tab-content a:hover span {
+  color: rgba(43, 113, 56, 1.0);
+}
+
+.tab-content a + a {
+  margin-top: 6px;
+}
+
+
+/*
+  Header styles
+*/
 
 header {
   width: 100%;
@@ -366,6 +437,10 @@ header nav.nav-main .pull-right a {
   font-weight: bold;
 }
 
+/*
+  Main page styles
+*/
+
 #wrap img {
   width: 100%;
 }
@@ -384,12 +459,16 @@ header nav.nav-main .pull-right a {
   overflow: hidden;
 }
 
+#wrap main section + section {
+  margin-top: 20px;
+}
+
 #wrap main .headline-photo {
   margin: 0;
   width: 100%;
 }
 
-#wrap main .headline-photo span {
+#wrap main .caption {
   color: rgba(155, 155, 155, 1.0);
   float: right;
   font-size: 12px;
@@ -423,9 +502,39 @@ header nav.nav-main .pull-right a {
   margin-left: 10px;
 }
 
+#wrap main ul {
+  padding: 0 20px;
+}
+
 #wrap main p.main {
   font-size: 22px;
   line-height: 27px;
+}
+
+#wrap main .ad {
+  border-bottom: 2px solid rgba(43, 113, 56, 1.0);
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+#wrap h4.category {
+  color: rgba(43, 113, 56, 1.0);
+  margin-top: 0;
+}
+
+#wrap h4.category.red {
+  color: rgba(208, 49, 69, 1.0);
+}
+
+#wrap .byline {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 14px;
+}
+
+#wrap .subsection-head {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 #wrap .teasers .row {
@@ -448,21 +557,6 @@ header nav.nav-main .pull-right a {
 
 #wrap .teasers h3 {
   margin-top: 6px;
-}
-
-#wrap main .ad {
-  border-bottom: 2px solid rgba(43, 113, 56, 1.0);
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-#wrap h4.category {
-  color: rgba(43, 113, 56, 1.0);
-  margin-top: 0;
-}
-
-#wrap h4.category.red {
-  color: rgba(208, 49, 69, 1.0);
 }
 
 #wrap .trending {
@@ -513,6 +607,10 @@ header nav.nav-main .pull-right a {
   margin-bottom: 30px;
 }
 
+#wrap .more-stories h3 {
+  margin-top: 0;
+}
+
 #wrap .more-stories .row {
   margin-bottom: 20px;
   overflow: hidden;
@@ -555,6 +653,77 @@ header nav.nav-main .pull-right a {
   line-height: 20px;
   margin-top: 12px;
 }
+
+/*
+  Article styles
+*/
+
+#wrap.article main {
+  background: white;
+  position: relative;
+}
+
+#wrap.article .article-img {
+  margin-bottom: -170px;
+}
+
+#wrap.article aside, #wrap.article .aside {
+  margin-top: 170px;
+}
+
+#wrap.article .post-navigation {
+  border-bottom: 2px solid rgba(239, 239, 239, 1.0);
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+#wrap.article .post-navigation > div {
+  width: 150px;
+  white-space: nowrap;
+}
+
+#wrap.article .post-navigation a {
+  text-decoration: none;
+}
+
+#wrap.article .post-navigation .arrow {
+  font-size: 32px;
+  display: inline-block;
+}
+
+#wrap.article .post-navigation .previous .arrow {
+  padding-right: 20px;
+}
+
+#wrap.article .post-navigation .next .arrow {
+  padding-left: 20px;
+}
+
+#wrap.article .post-navigation .next {
+  padding-right: 50px;
+}
+
+#wrap.article .post-navigation a div {
+  display: inline-block;
+  white-space: normal;
+}
+
+#wrap.article .post-navigation a span {
+  display: block;
+  vertical-align: top;
+}
+
+#wrap.article .category-list p {
+  font-size: 12px;
+}
+
+#wrap.article .related {
+  border: 5px solid rgba(43, 113, 56, 1.0);
+}
+/*
+  Aside styles
+*/
 
 aside, .aside {
   padding: 22px 30px 0 20px;
