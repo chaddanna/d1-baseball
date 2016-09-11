@@ -99,7 +99,7 @@ textarea {
   Custom defaults
 */
 
-h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, figcaption, select, option, button {
+h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, div, figcaption, select, option, button {
   font-family: "franklin-gothic-urw", sans-serif;
   color: rgba(74, 74, 74, 1.0);
 }
@@ -258,6 +258,87 @@ ul.tabs li.current{
 
 .tab-content a + a {
   margin-top: 6px;
+}
+
+/*
+  Filter and select styles
+*/
+
+
+#wrap .filters {
+  padding: 30px 0;
+}
+
+#wrap aside .filters, #wrap .aside .filters {
+  padding-top: 0;
+}
+
+#wrap .filters a {
+  color: rgba(43, 113, 56, 1.0);
+  font-size: 12px;
+}
+
+#wrap .filters label {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+#wrap .filters h3 {
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+#wrap .select-style {
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  border: 1px solid #ccc;
+  width: 120px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgba(239, 239, 239, 1.0);
+  background: rgba(239, 239, 239, 1.0) url("../img/arrow-drop-green.png") no-repeat 94%;
+  border: 1px solid rgba(215, 215, 215, 1.0);
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 14px;
+  height: 26px;
+}
+
+#wrap .select-style select {
+  padding: 5px 8px;
+  width: 130%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#wrap .select-style select:focus {
+  outline: none;
+}
+
+#wrap .filters .date {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+/*
+  Grid spacing
+*/
+
+.half {
+  width: 48.5%;
+}
+
+.half + .half {
+  margin-left: 3%;
 }
 
 
@@ -441,10 +522,6 @@ header nav.nav-main .pull-right a {
   Main page styles
 */
 
-#wrap img {
-  width: 100%;
-}
-
 #wrap {
   background: rgba(255, 255, 255, 1.0);
   display: block;
@@ -455,8 +532,95 @@ header nav.nav-main .pull-right a {
   font-size: 14px;
 }
 
+#wrap .data-table + .data-table {
+  border-top: 2px solid rgba(43, 113, 56, 1.0);
+}
+
+#wrap .data-table .table-group + .table-group {
+  margin-top: 30px;
+}
+
+#wrap .data-table table {
+  width: 100%;
+}
+
+#wrap .data-table thead {
+  background: rgba(239, 239, 239, 1.0);
+}
+
+#wrap .data-table thead td {
+  color: rgba(116, 115, 116, 1.0);
+  font-weight: 700;
+}
+
+#wrap .data-table tbody tr {
+  border-bottom: 2px solid rgba(239, 239, 239, 1.0);
+}
+
+#wrap .data-table tbody + tbody {
+  border-top: 2px solid rgba(155, 155, 155, 1.0);
+}
+
+#wrap .data-table tbody tr:last-child {
+  border-bottom: 0;
+}
+
+#wrap .data-table .special-tournament {
+  border: 2px solid rgba(43, 113, 56, 1.0);
+}
+
+#wrap .data-table .special-tournament:before {
+  background: rgba(43, 113, 56, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+  content: "Special Tournament";
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#wrap .data-table td {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 14px;
+  padding: 9px;
+}
+
+#wrap .data-table td.date {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 12px;
+}
+
+#wrap .data-table td.result {
+  font-weight: 700;
+}
+
+#wrap .data-table td.win:before {
+  content: "W ";
+  color: rgba(49, 172, 74, 1.0);
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+#wrap .data-table td.lose:before {
+  content: "L ";
+  color: rgba(208, 49, 69, 1.0);
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+#wrap .data-table td img {
+  max-height: 16px;
+}
+
+
 #wrap main {
   overflow: hidden;
+}
+
+#wrap main img {
+  max-width: 100%;
 }
 
 #wrap main section + section {
@@ -723,11 +887,15 @@ header nav.nav-main .pull-right a {
 }
 
 /*
-  scores styles
+  Scores styles
 */
 
 #wrap.scores main .content {
   margin-right: 30px;
+}
+
+#wrap.scores .row + .row {
+  margin-top: 20px;
 }
 
 #wrap.scores h1, #wrap.scores h3 {
@@ -738,62 +906,6 @@ header nav.nav-main .pull-right a {
 #wrap.scores hgroup a {
   color: rgba(49, 172, 74, 1.0);
   text-decoration: none;
-}
-
-#wrap.scores .filters {
-  padding: 20px 0;
-}
-
-#wrap.scores .filters label {
-  color: rgba(116, 115, 116, 1.0);
-  font-size: 14px;
-  font-weight: 700;
-  margin-right: 10px;
-}
-
-#wrap.scores .select-style {
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
-  border: 1px solid #ccc;
-  width: 120px;
-  border-radius: 6px;
-  overflow: hidden;
-  background-color: rgba(239, 239, 239, 1.0);
-  background: rgba(239, 239, 239, 1.0) url("../img/arrow-drop-green.png") no-repeat 94%;
-  border: 1px solid rgba(215, 215, 215, 1.0);
-  color: rgba(116, 115, 116, 1.0);
-  font-size: 14px;
-  height: 26px;
-}
-
-#wrap.scores .select-style select {
-  padding: 5px 8px;
-  width: 130%;
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  background-image: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-#wrap.scores .select-style select:focus {
-  outline: none;
-}
-
-#wrap.scores .filters select {
-}
-
-#wrap.scores .filters .date {
-  display: inline-block;
-  margin-left: 30px;
-}
-
-#wrap.scores .row + .row {
-  margin-top: 20px;
 }
 
 #wrap.scores .score-set + .score-set {
@@ -808,7 +920,7 @@ header nav.nav-main .pull-right a {
 }
 
 #wrap.scores .score-set-item {
-  width: 22.25%;
+  width: 22.75%;
 }
 
 #wrap.scores .score-set-item > div {
@@ -821,7 +933,7 @@ header nav.nav-main .pull-right a {
 }
 
 #wrap.scores .score-set-item + .score-set-item {
-  margin-left: 2.0%;
+  margin-left: 2.5%;
 }
 
 #wrap.scores .score-set-item table {
@@ -905,9 +1017,139 @@ header nav.nav-main .pull-right a {
   text-transform: uppercase;
 }
 
+/*
+  Team Profile styles
+*/
+.team-header {
+  overflow: hidden;
+  padding: 30px 30px 15px 30px;
+  position: relative;
+}
 
+.team-header-left {
+  display: inline-block;
+}
 
+.team-header-right {
+  width: 300px;
+}
 
+.team-header > img {
+  position: absolute;
+  opacity: 0.2;
+  top: -10%;
+  height: 120%;
+}
+
+.team-header > div {
+  position: relative;
+}
+
+.team-header h1 {
+  color: rgba(255, 255, 255, 1.0);
+  display: inline;
+}
+
+.team-header h3 {
+  color: rgba(215, 215, 215, 1.0);
+  display: inline;
+  margin-left: 15px;
+}
+
+.team-header nav {
+  margin-top: 36px;
+}
+
+.team-header nav a {
+  color: rgba(255, 255, 255, 1.0);
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.team-header nav a:first-child {
+  padding-left: 0;
+}
+
+.team-header .team-logo img {
+  max-width: 45px;
+}
+
+.team-header .cite {
+  margin-top: 10px;
+}
+
+.team-header .cite span {
+  color: rgba(155, 155, 155, 1.0);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.team-header .cite span span {
+  color: rgba(255, 255, 255, 1.0);
+  font-weight: 900;
+}
+
+.score-board > div {
+  background: rgba(86, 40, 146, 1.0);
+  border-radius: 10px;
+  color: rgba(239, 239, 239, 1.0);
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 24px;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.score-board > div + div {
+  margin-left: 15px;
+}
+
+.score-board > div span {
+  color: rgba(215, 215, 215, 1.0);
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.team-profile .data-table.schedule td:first-child {
+  width: 17%;
+}
+
+.team-profile .data-table.schedule td:nth-child(2){
+  width: 8%;
+}
+
+.team-profile .data-table.schedule td:nth-child(3){
+  width: 12%;
+}
+
+.team-profile .data-table.schedule td:nth-child(4){
+  width: 22%;
+}
+
+.team-profile .data-table.schedule td:nth-child(5){
+  width: 16%;
+}
+
+.team-profile .data-table.schedule td:nth-child(6){
+  width: 13%;
+}
+
+.team-profile .data-table.schedule td:nth-child(7){
+  text-align: center;
+}
+
+.team-profile .data-table.schedule > div {
+  border: 2px solid rgba(255, 255, 255, 1.0);
+}
+
+.team-profile .data-table.schedule > .special-tournament {
+  border: 2px solid rgba(43, 113, 56, 1.0);
+}
 /*
   Aside styles
 */
@@ -915,6 +1157,10 @@ header nav.nav-main .pull-right a {
 aside, .aside {
   padding: 22px 30px 0 20px;
   width: 300px;
+}
+
+#wrap aside img,  #wrap .aside img {
+  width: 100%;
 }
 
 aside section + section, .aside section + section {
