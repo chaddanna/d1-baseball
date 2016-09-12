@@ -1311,6 +1311,53 @@ header nav.nav-main .pull-right a {
   padding-left: 25px;
 }
 
+
+/*
+  Archive styles
+*/
+
+#wrap.archive .searchbox {
+  background: rgba(239, 239, 239, 1.0);
+  padding: 30px 20px;
+  margin: 30px 0;
+}
+
+#wrap.archive .searchbox * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#wrap.archive .searchbox h4 {
+  margin: 0;
+}
+
+#wrap.archive .searchbox form {
+  position: relative;
+  width: 85%;
+}
+
+#wrap.archive .searchbox input {
+  border: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(215, 215, 215, 1.0);
+  margin-left: 10px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+#wrap.archive .searchbox button {
+  border: 0;
+  background: 0;
+  color: rgba(43, 113, 56, 1.0);
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+#wrap.archive .more-stories-item + .more-stories-item {
+  margin-top: 20px;
+}
+
 /*
   Aside styles
 */
