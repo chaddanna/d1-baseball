@@ -532,6 +532,21 @@ header nav.nav-main .pull-right a {
   font-size: 14px;
 }
 
+#wrap .button-container {
+  padding: 30px 0;
+  text-align: center;
+}
+
+#wrap .button-container a {
+  background: rgba(239, 239, 239, 1.0);
+  border: 1px solid rgba(215, 215, 215, 1.0);
+  border-radius: 6px;
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 14px;
+  padding: 14px 36px;
+  text-decoration: none;
+}
+
 #wrap .data-table + .data-table {
   border-top: 2px solid rgba(43, 113, 56, 1.0);
 }
@@ -1150,6 +1165,152 @@ header nav.nav-main .pull-right a {
 .team-profile .data-table.schedule > .special-tournament {
   border: 2px solid rgba(43, 113, 56, 1.0);
 }
+
+/*
+  Player profile styles
+*/
+
+.player-header {
+  background: rgba(74, 74, 74, 1.0);
+  padding: 20px 30px;
+}
+
+.player-header .team-logo {
+  background: rgba(255, 255, 255, 1.0);
+  padding: 20px 62px;
+  margin-left: -30px;
+}
+
+.player-header .team-logo img {
+  max-width: 45px;
+}
+
+.player-header h1 {
+  color: rgba(255, 255, 255, 1.0);
+  display: inline;
+}
+
+.player-header h3 {
+  color: rgba(215, 215, 215, 1.0);
+  display: inline;
+  margin-left: 15px;
+}
+
+.player-header .team-header-left {
+  margin-left: 20px;
+}
+
+.player-header .player-info {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.player-header select {
+  background: rgba(155, 155, 155, 1.0);
+  border: 0;
+  color: rgba(255, 255, 255, 1.0);
+  height: 26px;
+  width: 220px;
+}
+
+.player-header .player-info span {
+  font-size: 14px;
+}
+
+.player-header .player-info .row > div {
+  display: inline-block;
+}
+
+.player-header .player-info .row > div + div {
+  margin-left: 10px;
+}
+
+.player-header .info-label {
+  color: rgba(155, 155, 155, 1.0);
+  font-weight: 900;
+}
+
+.player-header .info {
+  color: rgba(255, 255, 255, 1.0);
+  font-weight: 900;
+}
+
+.player-header .score-board .title {
+  color: rgba(255, 255, 255, 1.0);
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.player-header .score-board > div {
+    background: rgba(116, 115, 116, 1.0);
+    font-size: 18px;
+    line-height: 18px;
+    padding: 12px;
+}
+
+#wrap.player-profile .data-table td {
+  padding: 5px;
+  border: 2px solid rgba(239, 239, 239, 1.0);
+  text-align: center;
+}
+
+#wrap.player-profile section + section {
+  border-top: 2px solid rgba(43, 113, 56, 1.0);
+}
+
+#wrap.player-profile .byline {
+  color: rgba(155, 155, 155, 1.0);
+  display: block;
+  font-size: 14px;
+}
+
+#wrap.player-profile .note-item + .note-item {
+  border-top: 2px solid rgba(239, 239, 239, 1.0);
+  margin-top: 20px;
+}
+
+#wrap.player-profile .note-item .byline {
+  margin-top: 10px;
+}
+
+#wrap.player-profile h5 {
+  color: rgba(116, 115, 116, 1.0);
+  margin-bottom: 0;
+}
+
+#wrap.player-profile .slider-container {
+  display: block;
+  position: relative;
+  margin-top: 30px;
+}
+
+#wrap.player-profile .slider-container .arrow {
+  background: rgba(74, 74, 74, 0.6);
+  color: rgba(255, 255, 255, 1.0);
+  cursor: pointer;
+  font-size: 32px;
+  padding-top: 28%;
+  position: absolute;
+  top: 0;
+  bottom: 22px;
+  z-index: 1;
+}
+
+#wrap.player-profile .slider-container .arrow:hover {
+  background: rgba(74, 74, 74, 0.8);
+}
+
+#wrap.player-profile .slider-container .prev {
+  left: 0;
+  padding-right: 25px;
+}
+
+#wrap.player-profile .slider-container .next {
+  right: 0;
+  padding-left: 25px;
+}
+
 /*
   Aside styles
 */
