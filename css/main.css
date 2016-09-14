@@ -1168,7 +1168,7 @@ header nav.nav-main .pull-right a {
   Scores styles
 */
 
-#wrap.scores main .content, #wrap.statistics main .content, #wrap.nitty-gritty main .content {
+#wrap.scores main .content, #wrap.statistics main .content, #wrap.nitty-gritty main .content, #wrap.pythagorean-expectation main .content {
   margin-right: 30px;
 }
 
@@ -1265,8 +1265,36 @@ header nav.nav-main .pull-right a {
   max-width: 45px;
 }
 
+.team-header-left p {
+  color: rgba(255, 255, 255, 1.0);
+  font-size: 14px;
+  margin: 0;
+}
+
+.good-luck {
+  background: rgba(49, 172, 74, 1.0);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1.0);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 10px;
+}
+
+.bad-luck {
+  background: rgba(208, 49, 69, 1.0);
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1.0);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 10px;
+}
+
+.filters .bad-luck {
+  margin-top: 8px;
+}
+
 .cite {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .cite span {
@@ -1592,7 +1620,128 @@ header nav.nav-main .pull-right a {
   padding: 2px 6px;
 }
 
-.filters.complex-table
+/*
+  Pythagorean Expectation
+*/
+#wrap.pythagorean-expectation .complex-table td {
+  padding: 7px;
+}
+
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td {
+  text-align: center;
+}
+
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(1),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(1) {
+  width: 300px;
+}
+
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(2),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(2) {
+  width: auto;
+}
+
+#wrap .complex-table tbody td {
+  border-left: 2px solid rgba(239, 239, 239, 1.0);
+}
+
+#wrap .data-table.complex-table td img {
+  margin-right: 6px;
+}
+
+#wrap.pythagorean-expectation .complex-table td:last-child {
+  text-align: center !important;
+}
+
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(1) {
+  border-left: 0;
+  font-weight: 300;
+}
+
+#wrap.pythagorean-expectation .complex-table .main-tablehead td {
+  padding-top: 15px;
+}
+
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(3),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(4),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(9),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(10),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(16) {
+  background: rgba(255, 255, 255, 1.0);
+}
+
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(2),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(3),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(5),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(6),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(7),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(11),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(12) {
+  background: rgba(239, 239, 239, 1.0);
+  text-align: center;
+}
+
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(3),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(3),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(6),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(6),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(9),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(9),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(12),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(12),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(16),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(16) {
+  border-left: 2px solid rgba(239, 239, 239, 1.0) !important;
+}
+
+
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(2),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(2),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(4),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(4),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(5),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(5),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(8),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(8),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(11),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(11) {
+  border-left: 2px solid rgba(215, 215, 215, 1.0) !important;
+}
+
+#wrap.pythagorean-expectation .complex-table thead td:last-child,
+#wrap.pythagorean-expectation .complex-table tbody td:last-child {
+  border-right: 2px solid rgba(215, 215, 215, 1.0) !important;
+}
+
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(6),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(6),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(7),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(7),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(8),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(8),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(12),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(12),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(13),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(13),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(14),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(14),
+#wrap.pythagorean-expectation .complex-table .sub-tablehead td:nth-child(15),
+#wrap.pythagorean-expectation .complex-table tbody td:nth-child(15) {
+  text-align: center;
+}
+
+#wrap.pythagorean-expectation .complex-table tbody tr.automatic-bid td {
+  background: rgba(101, 193, 120, 1.0);
+}
+
+#wrap.pythagorean-expectation .complex-table tbody tr.conference-leader td {
+  background: rgba(203, 234, 210, 1.0);
+}
+
+#wrap.pythagorean-expectation .complex-table tbody tr.ineligible-postseason td {
+  background: rgba(155, 155, 155, 1.0);
+}
+
 
 
 /*
