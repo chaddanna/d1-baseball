@@ -128,7 +128,7 @@
       <section class="score-set">
         <h3>D1 Baseball Top 25</h3>
         <div class="row clearfix">
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead class="red">
@@ -170,7 +170,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -212,7 +212,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -254,7 +254,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -297,7 +297,7 @@
           </div>
         </div>
         <div class="row clearfix">
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead class="red">
@@ -339,7 +339,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -384,7 +384,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -426,7 +426,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -469,7 +469,7 @@
           </div>
         </div>
         <div class="row clearfix">
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead class="red">
@@ -511,7 +511,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -556,7 +556,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -598,7 +598,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -645,7 +645,7 @@
       <section class="score-set">
         <h3>ACC</h3>
         <div class="row clearfix">
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead class="red">
@@ -687,7 +687,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -729,7 +729,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -771,7 +771,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -814,7 +814,7 @@
           </div>
         </div>
         <div class="row clearfix">
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead class="red">
@@ -856,7 +856,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -901,7 +901,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -943,7 +943,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -986,7 +986,7 @@
           </div>
         </div>
         <div class="row clearfix">
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead class="red">
@@ -1028,7 +1028,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -1073,7 +1073,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>
@@ -1115,7 +1115,7 @@
             </div>
           </div>
 
-          <div class="score-set-item pull-left">
+          <div class="score-set-item pull-left fourth">
             <div>
               <table>
                 <thead>

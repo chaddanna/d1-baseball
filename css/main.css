@@ -142,6 +142,10 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, div, figcaption, select, opti
   position: relative;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .container {
   margin: 0 auto;
   max-width: 90%;
@@ -261,6 +265,44 @@ ul.tabs li.current{
 }
 
 /*
+  Image slider
+*/
+
+
+#wrap .slider-container {
+  display: block;
+  position: relative;
+  margin-top: 30px;
+}
+
+#wrap .slider-container .arrow {
+  background: rgba(74, 74, 74, 0.6);
+  color: rgba(255, 255, 255, 1.0);
+  cursor: pointer;
+  font-size: 32px;
+  padding-top: 28%;
+  position: absolute;
+  top: 0;
+  bottom: 22px;
+  z-index: 1;
+}
+
+#wrap .slider-container .arrow:hover {
+  background: rgba(74, 74, 74, 0.8);
+}
+
+#wrap .slider-container .prev {
+  left: 0;
+  padding-right: 25px;
+}
+
+#wrap .slider-container .next {
+  right: 0;
+  padding-left: 25px;
+}
+
+
+/*
   Filter and select styles
 */
 
@@ -287,7 +329,7 @@ ul.tabs li.current{
 
 #wrap .filters h3 {
   display: inline-block;
-  margin-top: 0;
+  margin: 0 !important;
   vertical-align: middle;
 }
 
@@ -347,6 +389,15 @@ ul.tabs li.current{
 
 .third + .third {
   margin-left: 3.25%;
+}
+
+
+.fourth {
+  width: 22.75%;
+}
+
+.fourth + .fourth {
+  margin-left: 2.5%;
 }
 
 
@@ -555,6 +606,97 @@ header nav.nav-main .pull-right a {
   text-decoration: none;
 }
 
+#wrap .row + .row {
+  margin-top: 25px;
+}
+
+#wrap .score-set + .score-set {
+  border-top: 2px solid rgba(239, 239, 239, 1.0) !important;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+#wrap .score-set + .score-set .filters {
+  padding-top: 0;
+}
+
+#wrap .score-set-item > div {
+  padding: 5px;
+  border: 1px solid rgba(215, 215, 215, 1.0);
+}
+
+#wrap .score-set:last-child {
+  margin-bottom: 20px;
+}
+
+#wrap td:last-child {
+  text-align: right;
+}
+
+#wrap .score-set-item table {
+  width: 100%;
+}
+
+#wrap .score-set-item thead {
+  background: rgba(239, 239, 239, 1.0);
+  text-transform: uppercase;
+}
+
+#wrap .score-set-item thead td {
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 12px;
+  padding: 6px 4px;
+}
+
+#wrap .score-set-item thead.red {
+  background: rgba(208, 49, 69, 1.0);
+  text-transform: uppercase;
+}
+
+#wrap .score-set-item thead.red td {
+  color: rgba(255, 255, 255, 1.0);
+}
+
+#wrap .score-set-item td {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 14px;
+  padding: 2px 5px;
+  font-weight: 700;
+}
+
+#wrap .winner .mark:before {
+    color: rgba(49, 172, 74, 1.0);
+    content: "\25C0";
+    font-size: 10px;
+    text-align: right;
+}
+
+#wrap .winner td {
+  color: rgba(74, 74, 74, 1.0);
+}
+
+#wrap .score-set-item .footer a {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 12px;
+  font-weight: 300;
+  padding: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#wrap .score-set-item .footer a + a {
+  border-left: 1px solid rgba(116, 115, 116, 1.0);
+  padding-left: 6px;
+}
+
+#wrap .score-set-item .note {
+  color: rgba(116, 115, 116, 1.0);
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
 #wrap .data-table + .data-table {
   border-top: 2px solid rgba(43, 113, 56, 1.0);
 }
@@ -563,10 +705,36 @@ header nav.nav-main .pull-right a {
   margin-top: 30px;
 }
 
+
+#wrap .data-table.full-size td {
+  padding: 5px 2px;
+}
+
+#wrap .data-table.full-size td:last-child {
+  text-align: left;
+}
+
+#wrap .data-table h3 {
+  margin-bottom: 20px;
+}
+
+#wrap .data-table h4 {
+  color: rgba(116, 115, 116, 1.0);
+  font-weight: 700;
+  margin-top: 0;
+}
+
 #wrap .data-table a {
   color: rgba(43, 113, 56, 1.0);
   font-size: 14px;
   text-decoration: none;
+  vertical-align: middle;
+}
+
+#wrap .data-table .team img {
+  max-width: 18px;
+  margin-right: 6px;
+  vertical-align: middle;
 }
 
 #wrap .data-table table {
@@ -653,7 +821,7 @@ header nav.nav-main .pull-right a {
 }
 
 #wrap main section + section {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 #wrap main .headline-photo {
@@ -731,7 +899,6 @@ header nav.nav-main .pull-right a {
 }
 
 #wrap .teasers .row {
-  margin-bottom: 30px;
   overflow: hidden;
 }
 
@@ -758,7 +925,6 @@ header nav.nav-main .pull-right a {
 }
 
 #wrap .trending .row {
-  margin-bottom: 30px;
   overflow: hidden;
 }
 
@@ -805,7 +971,6 @@ header nav.nav-main .pull-right a {
 }
 
 #wrap .more-stories .row {
-  margin-bottom: 20px;
   overflow: hidden;
 }
 
@@ -923,10 +1088,6 @@ header nav.nav-main .pull-right a {
   margin-right: 30px;
 }
 
-#wrap.scores .row + .row {
-  margin-top: 20px;
-}
-
 #wrap.scores h1, #wrap.scores h3 {
   display: inline-block;
   margin-right: 10px;
@@ -937,63 +1098,11 @@ header nav.nav-main .pull-right a {
   text-decoration: none;
 }
 
-#wrap.scores .score-set + .score-set {
-  border-top: 2px solid rgba(239, 239, 239, 1.0);
-  margin-top: 30px;
-  padding-top: 30px;
-}
-
 #wrap.scores .score-set h3 {
   margin-bottom: 22px;
   margin-top: 0;
 }
 
-#wrap.scores .score-set-item {
-  width: 22.75%;
-}
-
-#wrap.scores .score-set-item > div {
-  padding: 5px;
-  border: 1px solid rgba(215, 215, 215, 1.0);
-}
-
-#wrap.scores .score-set:last-child {
-  margin-bottom: 20px;
-}
-
-#wrap.scores .score-set-item + .score-set-item {
-  margin-left: 2.5%;
-}
-
-#wrap.scores .score-set-item table {
-  width: 100%;
-}
-
-#wrap.scores .score-set-item thead {
-  background: rgba(239, 239, 239, 1.0);
-  text-transform: uppercase;
-}
-
-#wrap.scores .score-set-item thead td {
-  color: rgba(74, 74, 74, 1.0);
-  font-size: 12px;
-  padding: 6px 4px;
-}
-
-#wrap.scores .score-set-item thead.red {
-  background: rgba(208, 49, 69, 1.0);
-  text-transform: uppercase;
-}
-
-#wrap.scores .score-set-item thead.red td {
-  color: rgba(255, 255, 255, 1.0);
-}
-#wrap.scores .score-set-item td {
-  color: rgba(116, 115, 116, 1.0);
-  font-size: 14px;
-  padding: 2px 5px;
-  font-weight: 700;
-}
 
 #wrap.scores .score-set-item td:first-child {
   width: 30px;
@@ -1011,39 +1120,6 @@ header nav.nav-main .pull-right a {
 
 #wrap.scores .score-set-item img {
   width: 16px;
-}
-
-#wrap.scores .winner .mark:before {
-    color: rgba(49, 172, 74, 1.0);
-    content: "\25C0";
-    font-size: 10px;
-    text-align: right;
-}
-
-#wrap.scores .winner td {
-  color: rgba(74, 74, 74, 1.0);
-}
-
-#wrap.scores .footer a {
-  color: rgba(116, 115, 116, 1.0);
-  font-size: 12px;
-  font-weight: 300;
-  padding: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-#wrap.scores .footer a + a {
-  border-left: 1px solid rgba(116, 115, 116, 1.0);
-  padding-left: 6px;
-}
-
-#wrap.scores .note {
-  color: rgba(116, 115, 116, 1.0);
-  font-size: 12px;
-  font-weight: 300;
-  margin-top: 5px;
-  text-transform: uppercase;
 }
 
 /*
@@ -1293,38 +1369,6 @@ header nav.nav-main .pull-right a {
   margin-bottom: 0;
 }
 
-#wrap.player-profile .slider-container {
-  display: block;
-  position: relative;
-  margin-top: 30px;
-}
-
-#wrap.player-profile .slider-container .arrow {
-  background: rgba(74, 74, 74, 0.6);
-  color: rgba(255, 255, 255, 1.0);
-  cursor: pointer;
-  font-size: 32px;
-  padding-top: 28%;
-  position: absolute;
-  top: 0;
-  bottom: 22px;
-  z-index: 1;
-}
-
-#wrap.player-profile .slider-container .arrow:hover {
-  background: rgba(74, 74, 74, 0.8);
-}
-
-#wrap.player-profile .slider-container .prev {
-  left: 0;
-  padding-right: 25px;
-}
-
-#wrap.player-profile .slider-container .next {
-  right: 0;
-  padding-left: 25px;
-}
-
 
 /*
   Archive styles
@@ -1376,24 +1420,12 @@ header nav.nav-main .pull-right a {
   Statistics styles
 */
 
-#wrap.statistics h3 {
-  margin-bottom: 20px;
-}
-
 #wrap.statistics .data-table + .data-table {
   border-top: 2px solid rgba(239, 239, 239, 1.0);
 }
 
 #wrap.statistics td:last-child {
   text-align: right;
-}
-
-#wrap.statistics .data-table.full-size td {
-  padding: 5px 2px;
-}
-
-#wrap.statistics .data-table.full-size td:last-child {
-  text-align: left;
 }
 
 #wrap.statistics .data-table tbody tr:last-child {
@@ -1417,6 +1449,24 @@ header nav.nav-main .pull-right a {
   color: rgba(43, 113, 56, 1.0);
   font-weight: 700;
 }
+/*
+  Conference overview styles
+*/
+
+.conference-overview .player-header h1 {
+  max-width: 300px;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.conference-overview .player-header .team-logo img {
+  max-width: 60px;
+}
+
+.conference-overview .player-header .score-board > div {
+  width: 32px;
+}
+
 
 /*
   Aside styles
