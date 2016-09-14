@@ -584,6 +584,7 @@ header nav.nav-main .pull-right a {
 #wrap {
   background: rgba(255, 255, 255, 1.0);
   display: block;
+  padding-bottom: 30px;
 }
 
 #wrap .date {
@@ -811,6 +812,89 @@ header nav.nav-main .pull-right a {
   max-height: 16px;
 }
 
+#wrap .complex-table .borders {
+  border-left: 2px solid rgba(215, 215, 215, 1.0);
+  border-right: 2px solid rgba(215, 215, 215, 1.0);
+}
+
+#wrap .complex-table .sub-tablehead td:nth-child(2), #wrap .complex-table tbody td:nth-child(2) {
+  width: 200px;
+}
+
+#wrap .complex-table tbody td {
+  border-left: 2px solid rgba(239, 239, 239, 1.0);
+}
+
+#wrap .data-table.complex-table td img {
+  margin-right: 6px;
+}
+
+#wrap .complex-table td:last-child {
+  text-align: center !important;
+}
+
+#wrap .complex-table tbody td:nth-child(1) {
+  border-left: 0;
+  font-weight: 700;
+}
+
+#wrap .complex-table .main-tablehead td {
+  padding-top: 15px;
+}
+
+#wrap .complex-table tbody td:nth-child(3),
+#wrap .complex-table tbody td:nth-child(4),
+#wrap .complex-table tbody td:nth-child(5),
+#wrap .complex-table tbody td:nth-child(9),
+#wrap .complex-table tbody td:nth-child(10),
+#wrap .complex-table tbody td:nth-child(11),
+#wrap .complex-table tbody td:nth-child(16),
+#wrap .complex-table tbody td:nth-child(17) {
+  background: rgba(239, 239, 239, 1.0);
+  text-align: center;
+}
+
+#wrap .complex-table .sub-tablehead td:nth-child(3),
+#wrap .complex-table tbody td:nth-child(3),
+#wrap .complex-table .sub-tablehead td:nth-child(6),
+#wrap .complex-table tbody td:nth-child(6),
+#wrap .complex-table .sub-tablehead td:nth-child(9),
+#wrap .complex-table tbody td:nth-child(9),
+#wrap .complex-table .sub-tablehead td:nth-child(12),
+#wrap .complex-table tbody td:nth-child(12),
+#wrap .complex-table .sub-tablehead td:nth-child(16),
+#wrap .complex-table tbody td:nth-child(16) {
+  border-left: 2px solid rgba(215, 215, 215, 1.0) !important;
+}
+
+#wrap .complex-table .sub-tablehead td:nth-child(6),
+#wrap .complex-table tbody td:nth-child(6),
+#wrap .complex-table .sub-tablehead td:nth-child(7),
+#wrap .complex-table tbody td:nth-child(7),
+#wrap .complex-table .sub-tablehead td:nth-child(8),
+#wrap .complex-table tbody td:nth-child(8),
+#wrap .complex-table .sub-tablehead td:nth-child(12),
+#wrap .complex-table tbody td:nth-child(12),
+#wrap .complex-table .sub-tablehead td:nth-child(13),
+#wrap .complex-table tbody td:nth-child(13),
+#wrap .complex-table .sub-tablehead td:nth-child(14),
+#wrap .complex-table tbody td:nth-child(14),
+#wrap .complex-table .sub-tablehead td:nth-child(15),
+#wrap .complex-table tbody td:nth-child(15) {
+  text-align: center;
+}
+
+#wrap .complex-table tbody tr.automatic-bid td {
+  background: rgba(101, 193, 120, 1.0);
+}
+
+#wrap .complex-table tbody tr.conference-leader td {
+  background: rgba(203, 234, 210, 1.0);
+}
+
+#wrap .complex-table tbody tr.ineligible-postseason td {
+  background: rgba(155, 155, 155, 1.0);
+}
 
 #wrap main {
   overflow: hidden;
@@ -1084,7 +1168,7 @@ header nav.nav-main .pull-right a {
   Scores styles
 */
 
-#wrap.scores main .content, #wrap.statistics main .content {
+#wrap.scores main .content, #wrap.statistics main .content, #wrap.nitty-gritty main .content {
   margin-right: 30px;
 }
 
@@ -1181,17 +1265,17 @@ header nav.nav-main .pull-right a {
   max-width: 45px;
 }
 
-.team-header .cite {
+.cite {
   margin-top: 10px;
 }
 
-.team-header .cite span {
+.cite span {
   color: rgba(155, 155, 155, 1.0);
   font-size: 14px;
   font-weight: 300;
 }
 
-.team-header .cite span span {
+.cite span span {
   color: rgba(255, 255, 255, 1.0);
   font-weight: 900;
 }
@@ -1449,6 +1533,8 @@ header nav.nav-main .pull-right a {
   color: rgba(43, 113, 56, 1.0);
   font-weight: 700;
 }
+
+
 /*
   Conference overview styles
 */
@@ -1466,6 +1552,47 @@ header nav.nav-main .pull-right a {
 .conference-overview .player-header .score-board > div {
   width: 32px;
 }
+
+
+/*
+  Nitty gritty styles
+*/
+
+.nitty-gritty .player-header .team-logo img {
+  max-width: 60px;
+}
+
+.nitty-gritty .player-header .team-logo {
+  padding: 20px 42px;
+}
+
+.filters.complex-table span {
+  border-radius: 4px;
+  display: inline-block;
+  color: rgba(74, 74, 74, 1.0);
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+.filters.complex-table span.automatic-bid {
+  background: rgba(101, 193, 120, 1.0);
+}
+
+.filters.complex-table span.conference-leader {
+  background: rgba(203, 234, 210, 1.0);
+}
+
+.filters.complex-table span.ineligible-postseason {
+  background: rgba(155, 155, 155, 1.0);
+}
+
+.filters.complex-table span.key {
+  font-size: 12px;
+  font-style: italic;
+  padding: 2px 6px;
+}
+
+.filters.complex-table
 
 
 /*
