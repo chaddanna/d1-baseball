@@ -2175,6 +2175,28 @@ footer .ad img {
     font-size: 15px;
     padding: 0 6px;
   }
+
+  footer .content {
+    padding: 22px 20px;
+  }
+
+  footer .logo {
+    width: 60px;
+  }
+
+  footer .logo img {
+    width: 100%;
+  }
+
+  footer nav a {
+    padding: 4px 10px;
+  }
+
+  footer .right-side {
+    max-width: 70%;
+    float: left;
+    margin-left: 10px;
+  }
 }
 
 @media only screen and (max-width: 770px) {
@@ -2514,28 +2536,6 @@ footer .ad img {
     color: rgba(255, 255, 255, 1.0);
     height: 26px;
     width: 100%;
-  }
-
-  footer .content {
-    padding: 22px 20px;
-  }
-
-  footer .logo {
-    width: 60px;
-  }
-
-  footer .logo img {
-    width: 100%;
-  }
-
-  footer nav a {
-    padding: 4px 10px;
-  }
-
-  footer .right-side {
-    max-width: 70%;
-    float: left;
-    margin-left: 10px;
   }
 }
 
