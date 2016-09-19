@@ -8,7 +8,7 @@
     <div class="team-header-left">
       <h1 class="team-title">Southeastern Conference</h1>
 
-      <select name="team">
+      <select name="team" class="mobile-hidden">
         <option value="lsu">Conferences</option>
       </select>
     </div>

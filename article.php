@@ -50,7 +50,7 @@
           “Greer has just a very simple approach that you wish everybody had, but he’s stronger now, driving balls to the gaps,” Smith said. He’s just a really, really good hitter.”
         </p>
 
-        <p>
+        <p class="img-wrap">
           <img src="img/article-img.png" alt="" data-rjs="2"/>
           <span class="pull-right caption">Arizona State first baseman David Greer (Shotgun Spratling)</span>
         </p>

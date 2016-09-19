@@ -14,7 +14,7 @@
         <a href="#" class="bold">Advertise with Us</a>
       </nav>
 
-      <div class="ad pull-right">
+      <div class="ad pull-right mobile-hidden">
         <img src="img/ad-728x90.png" alt="" data-rjs="2"/>
       </div>
     </div>

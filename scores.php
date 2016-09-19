@@ -5,8 +5,9 @@
     <div class="content">
       <hgroup>
         <h1>Today's Scores</h1>
+        <a href="#" class="mobile-visible">&#9664;</a>
         <h3>Tuesday, March 22, 2016</h3>
-        <a href="#">&#9664;</a>
+        <a href="#" class="mobile-hidden">&#9664;</a>
         <a href="#">&#9658;</a>
       </hgroup>
 

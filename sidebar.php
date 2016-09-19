@@ -1,4 +1,4 @@
-<aside class="aside pull-right">
+<aside class="aside pull-right mobile-hidden">
   <section id="search">
     <h4 class="category">
       Player Search

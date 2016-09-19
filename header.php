@@ -26,7 +26,7 @@
         <![endif]-->
 
         <header>
-          <div class="fixed-position">
+          <div class="fixed-position mobile-hidden">
             <div class="left-side pull-left">
               <div class="logo pull-left">
                 <a href="http://www.d1baseball.com/">
@@ -86,16 +86,31 @@
                   </table>
                 </div>
                 <?php } ?>
-                
+
               </div>
             </div>
           </div>
+          <div class="fixed-position mobile-visible">
+            <div class="clearfix nav-main">
+              <a class="nav-toggle pull-left">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="pull-left logo">D1BASEBALL<span>.com</span></a>
+              <a href="#" class="subscribe pull-right">Subscribe</a>
+            </div>
 
+            <nav class="mobile-visible">
+              <a href="#">Scores</a>
+              <a href="#">News</a>
+              <a href="#">Latest</a>
+              <a href="#" class="bold">Login</a>
+            </nav>
+          </div>
           <div class="ad">
             <img src="img/ad-728x90.png" alt="" data-rjs="2"/>
           </div>
 
-          <div class="container">
+          <div class="container mobile-hidden">
             <nav class="nav-social pull-left">
               <a href="#">
                 <i class="fa fa-facebook" aria-hidden="true"></i>

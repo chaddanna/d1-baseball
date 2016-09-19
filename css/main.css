@@ -104,6 +104,18 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, div, figcaption, select, opti
   color: rgba(74, 74, 74, 1.0);
 }
 
+.mobile-visible {
+  display: none !important;
+}
+
+.mobile-hidden {
+  display: block;
+}
+
+#wrap .mobile-hidden {
+  display: inline-block;
+}
+
 .flex-container {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -124,6 +136,10 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, div, figcaption, select, opti
   align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+
+.bold {
+  font-weight: 900 !important;
 }
 
 .pull-left {
@@ -810,6 +826,7 @@ header nav.nav-main .pull-right a {
 
 #wrap .data-table td img {
   max-height: 16px;
+  max-width: 16px;
 }
 
 #wrap .complex-table .borders {
@@ -2041,10 +2058,6 @@ footer nav a:last-child {
   padding-right: 0;
 }
 
-footer nav a.bold {
-  font-weight: bolder;
-}
-
 footer .ad {
   width: auto;
   margin: auto;
@@ -2054,6 +2067,7 @@ footer .ad {
 
 footer .ad img {
   width: auto;
+  max-width: 100%;
 }
 
 /* ==========================================================================
@@ -2136,8 +2150,393 @@ footer .ad img {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+
+ @media only screen and (max-width: 1050px) {
+   #wrap .subscription {
+     width: auto;
+     padding-left: 0;
+     border: 0;
+     float: none !important;
+   }
+
+  #wrap .account-info {
+    overflow: auto;
+    display: block;
+    width: 100%;
+  }
+
+  #wrap .account-info table {
+    width: 100%;
+  }
+ }
+
+@media only screen and (max-width: 940px) {
+  header nav.nav-main a {
+    font-size: 15px;
+    padding: 0 6px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .mobile-visible {
+    display: inline-block !important;
+  }
+
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .half, .third {
+    width: 100%;
+  }
+
+  .half + .half, .third + .third {
+    margin: 0;
+  }
+
+  .fourth {
+    width: 48.75%;
+  }
+
+  .score-set-item {
+    margin-bottom: 10px;
+  }
+
+  .score-set-item:nth-child(3) {
+    margin-left: 0;
+  }
+
+  #wrap .data-table td {
+    padding: 5px 2px;
+  }
+
+  #wrap.scores .score-set h3 {
+    margin-bottom: 12px;
+  }
+
+  #wrap.conference-overview .player-header .team-header-left {
+    width: 230px;
+  }
+
+  #wrap.conference-overview .score-board {
+    width: 236px;
+    margin-top: 10px;
+  }
+
+  #wrap main section + section {
+    margin-top: 20px;
+  }
+
+  #wrap .filters {
+    padding: 20px 0;
+  }
+
+  #wrap .filters .date {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  #wrap .select-style {
+    padding-right: 8px;
+    width: auto;
+  }
+
+  #wrap .select-style + .select-style {
+    margin-left: 5px;
+  }
+
+  #wrap.scores h1 {
+    display: block;
+  }
+
+  #wrap.scores h3 {
+    display: inline-block;
+  }
+
+  .account-info table td {
+    padding: 3px;
+    font-weight: 300;
+    display: block;
+  }
+
+  header .fixed-position {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  header .nav-main {
+    background: rgba(49, 172, 74, 1.0);
+    padding: 20px;
+  }
+
+  header .nav-toggle {
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  header .logo {
+    background: none;
+    color: rgba(255, 255, 255, 1.0);
+    font-family: franchise;
+    font-size: 30px;
+    height: 30px;
+    line-height: 38px;
+    margin-left: 20px;
+    padding: 0;
+    text-decoration: none;
+    width: auto;
+  }
+
+  header .logo span {
+    background: none;
+    color: rgba(255, 255, 255, 1.0);
+    font-family: franchise;
+    font-size: 22px;
+    padding: 0;
+    text-decoration: none;
+  }
+
+  header .subscribe {
+    background: rgba(43, 113, 56, 1.0);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1.0);
+    font-size: 12px;
+    font-weight: 900;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  header nav.mobile-visible {
+    background: rgba(43, 113, 56, 1.0);
+    padding: 10px;
+    display: table !important;
+    width: 100%;
+  }
+
+  header nav.mobile-visible a {
+    color: rgba(255, 255, 255, 1.0);
+    display: table-cell;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  header nav.mobile-visible a + a {
+    border-left: 2px solid rgba(49, 172, 74, 0.5);
+  }
+
+  .team-header nav {
+    margin-top: 6px;
+  }
+
+  .ad {
+    width: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 10px 28px;
+  }
+
+  #wrap {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .content {
+    padding: 0 20px;
+    margin: 0 !important;
+  }
+
+  #wrap main .ad {
+    padding: 0;
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+
+  #wrap main .post-content {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  #wrap main p.main, p {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  #wrap main p.main {
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 4px;
+  }
+
+  #wrap main h1.post-title {
+    margin-top: 24px;
+    margin-bottom: 0;
+  }
+
+  #wrap main .caption {
+    margin-right: 10px;
+  }
+
+  #wrap main .categories {
+    font-size: 12px;
+  }
+
+  #wrap .trending .trending-item {
+    width: 100%;
+  }
+
+  #wrap .trending .trending-item + .trending-item {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  #wrap main img {
+    width: 100%;
+  }
+
+  #wrap .trending {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  #wrap .trending h3 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+
+  #wrap .trending p {
+    margin-top: 4px;
+  }
+
+  #wrap.article .article-img {
+    margin: 0;
+  }
+
+  #wrap.article .article-img img {
+    width: 100%;
+  }
+
+  #wrap .img-wrap {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  #wrap.article .post-navigation .next {
+    padding-right: 20px;
+  }
+
+  #wrap.article .post-navigation .arrow {
+    font-size: 22px;
+  }
+
+  #wrap.article .post-navigation .previous .arrow {
+    padding-right: 10px;
+  }
+
+  #wrap.article .post-navigation .next .arrow {
+    padding-left: 0;
+  }
+
+  ul.tabs li {
+    width: 100px;
+  }
+
+  .player-header .team-logo {
+    padding: 10px 32px;
+  }
+
+  .player-header .team-header-left {
+    float: left !important;
+    margin: 0;
+    margin-left: 10px;
+    width: 240px;
+  }
+
+  .team-header-right {
+    float: left !important;
+    margin-top: 10px;
+    width: 294px;
+  }
+
+  #wrap.user-account .player-header .team-header-left {
+    width: 150px;
+  }
+
+  #wrap .row + .row {
+    margin-top: 10px;
+  }
+
+  .player-header .player-info .row > div {
+    display: block;
+  }
+
+  .player-header .player-info .row > div + div {
+    margin-left: 0;
+  }
+
+  .player-info {
+    width: 220px;
+  }
+
+  .player-header h3 {
+    margin-left: 5px;
+  }
+
+  .container {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .filters.mobile-visible {
+    display: block !important;
+  }
+
+  select.mobile-visible {
+    background: rgba(155, 155, 155, 1.0);
+    border: 0;
+    color: rgba(255, 255, 255, 1.0);
+    height: 26px;
+    width: 100%;
+  }
+
+  footer .content {
+    padding: 22px 20px;
+  }
+
+  footer .logo {
+    width: 60px;
+  }
+
+  footer .logo img {
+    width: 100%;
+  }
+
+  footer nav a {
+    padding: 4px 10px;
+  }
+
+  footer .right-side {
+    max-width: 70%;
+    float: left;
+    margin-left: 10px;
+  }
 }
 
 @media print,

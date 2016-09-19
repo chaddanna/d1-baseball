@@ -31,7 +31,7 @@
             </div>
           </div>
         </div>
-        <select name="team">
+        <select name="team" class="mobile-hidden">
           <option value="lsu">LSU Players</option>
         </select>
       </div>
@@ -53,10 +53,15 @@
 
   <main>
     <div class="content">
+      <section class="filters mobile-visible">
+      <select name="team" class="mobile-visible">
+        <option value="lsu">LSU Players</option>
+      </select>
+    </section>
 
-      <section class="data-table">
+      <section class="data-table mobile-hidden">
         <section class="filters">
-          <h3>Pitching Statistics</h3>
+          <h3 class="mobile-hidden">Pitching Statistics</h3>
         </section>
         <div>
           <table>

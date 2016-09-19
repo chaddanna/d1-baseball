@@ -6,12 +6,12 @@
 ?>
 <div id="wrap" class="container team-profile">
   <div class="team-header" style="background: <?php echo $team_color; ?>;">
-    <img src="<?php echo $team_logo; ?>" alt="" data-rjs="2">
+    <img class="mobile-hidden" src="<?php echo $team_logo; ?>" alt="" data-rjs="2">
     <div class="clearfix">
       <div class="team-header-left">
         <h1 class="team-title">LSU</h1>
         <h3>45-21 (19-11 SEC)</h3>
-        <nav>
+        <nav class="mobile-hidden">
           <a href="#">Schedule</a>
           <a href="#">Statistics</a>
           <a href="#">Standings</a>
@@ -36,6 +36,13 @@
         </div>
       </div>
     </div>
+    <nav class="mobile-visible">
+      <a href="#">Schedule</a>
+      <a href="#">Statistics</a>
+      <a href="#">Standings</a>
+      <a href="#">Rankings</a>
+      <a href="#">By The Numbers</a>
+    </nav>
   </div>
 
   <?php require 'sidebar.php'; ?>
@@ -61,11 +68,11 @@
               <tr>
                 <td>Date</td>
                 <td>Loc</td>
-                <td>Opp RPI</td>
+                <td class="mobile-hidden">Opp RPI</td>
                 <td>Opponent</td>
-                <td>Record</td>
+                <td class="mobile-hidden">Record</td>
                 <td>Results</td>
-                <td>Notes</td>
+                <td class="mobile-hidden">Notes</td>
               </tr>
             </thead>
           </table>
@@ -76,38 +83,38 @@
               <tr>
                 <td class="date">Fri. Feb 19</td>
                 <td>vs</td>
-                <td>57</td>
+                <td class="mobile-hidden">57</td>
                 <td><img src="img/team-logos/bearcat-logo.png" alt="" data-rjs="2"/> Cincinnati</td>
-                <td>26-30-1</td>
+                <td class="mobile-hidden">26-30-1</td>
                 <td class="result win">6-5</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
               <tr>
                 <td class="date">Fri. Feb 20</td>
                 <td>vs</td>
-                <td>57</td>
+                <td class="mobile-hidden">57</td>
                 <td><img src="img/team-logos/bearcat-logo.png" alt="" data-rjs="2"/> Cincinnati</td>
-                <td>26-30-1</td>
+                <td class="mobile-hidden">26-30-1</td>
                 <td class="result win">6-5</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
               <tr>
                 <td class="date">Fri. Feb 21</td>
                 <td>vs</td>
-                <td>57</td>
+                <td class="mobile-hidden">57</td>
                 <td><img src="img/team-logos/bearcat-logo.png" alt="" data-rjs="2"/> Cincinnati</td>
-                <td>26-30-1</td>
+                <td class="mobile-hidden">26-30-1</td>
                 <td class="result win">6-5</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
               <tr>
                 <td class="date">Wed. Feb 24</td>
                 <td>at</td>
-                <td>64</td>
+                <td class="mobile-hidden">64</td>
                 <td><img src="img/team-logos/lamar-logo.png" alt="" data-rjs="2"/> Lamar</td>
-                <td>35-19</td>
+                <td class="mobile-hidden">35-19</td>
                 <td class="result lose">11-2</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
             </tbody>
           </table>
@@ -118,29 +125,29 @@
               <tr>
                 <td class="date">Sat. Mar 5</td>
                 <td>vs</td>
-                <td>225</td>
+                <td class="mobile-hidden">225</td>
                 <td><img src="img/team-logos/ballstate-logo.png" alt="" data-rjs="2"/> Ball State</td>
-                <td>32-26</td>
+                <td class="mobile-hidden">32-26</td>
                 <td class="result win">11-2</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
               <tr>
                 <td class="date">Sun. Mar 6</td>
                 <td>vs</td>
-                <td>225</td>
+                <td class="mobile-hidden">225</td>
                 <td><img src="img/team-logos/ballstate-logo.png" alt="" data-rjs="2"/> Ball State</td>
-                <td>32-26</td>
+                <td class="mobile-hidden">32-26</td>
                 <td class="result win">11-2</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
               <tr>
                 <td class="date">Tues. Mar. 8</td>
                 <td>vs</td>
-                <td>77</td>
+                <td class="mobile-hidden">77</td>
                 <td><img src="img/team-logos/neworleans-logo.png" alt="" data-rjs="2"/> New Orleans</td>
-                <td>31-26</td>
+                <td class="mobile-hidden">31-26</td>
                 <td class="result win">11-2</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
             </tbody>
           </table>
@@ -151,38 +158,38 @@
               <tr>
                 <td class="date">Fri. Feb 19</td>
                 <td>vs</td>
-                <td>57</td>
+                <td class="mobile-hidden">57</td>
                 <td><img src="img/team-logos/bearcat-logo.png" alt="" data-rjs="2"/> Cincinnati</td>
-                <td>26-30-1</td>
+                <td class="mobile-hidden">26-30-1</td>
                 <td class="result win">6-5</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
               <tr>
                 <td class="date">Fri. Feb 20</td>
                 <td>vs</td>
-                <td>57</td>
+                <td class="mobile-hidden">57</td>
                 <td><img src="img/team-logos/bearcat-logo.png" alt="" data-rjs="2"/> Cincinnati</td>
-                <td>26-30-1</td>
+                <td class="mobile-hidden">26-30-1</td>
                 <td class="result win">6-5</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
               <tr>
                 <td class="date">Fri. Feb 21</td>
                 <td>vs</td>
-                <td>57</td>
+                <td class="mobile-hidden">57</td>
                 <td><img src="img/team-logos/bearcat-logo.png" alt="" data-rjs="2"/> Cincinnati</td>
-                <td>26-30-1</td>
+                <td class="mobile-hidden">26-30-1</td>
                 <td class="result win">6-5</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
               <tr>
                 <td class="date">Wed. Feb 24</td>
                 <td>at</td>
-                <td>64</td>
+                <td class="mobile-hidden">64</td>
                 <td><img src="img/team-logos/lamar-logo.png" alt="" data-rjs="2"/> Lamar</td>
-                <td>35-19</td>
+                <td class="mobile-hidden">35-19</td>
                 <td class="result lose">11-2</td>
-                <td>[+]</td>
+                <td class="mobile-hidden">[+]</td>
               </tr>
             </tbody>
           </table>
