@@ -629,10 +629,10 @@
         </div>
         <div class="more-stories-item clearfix row">
           <figure>
-            <img src="img/more-stories1.png" alt="" data-rjs="2"/>
+            <a href="#"><img src="img/more-stories1.png" alt="" data-rjs="2"/></a>
           </figure>
           <div class="stories-content">
-            <h3>Stat Roundup: March 15 Top Performers</h3>
+            <a href="#"><h3>Stat Roundup: March 15 Top Performers</h3></a>
             <span>D1 Baseball Staff - March 15, 2016</span>
             <p>
               Bobby Dalbec homered twice and earned the save to lead Arizona past New Mexico, headlining the Tuesday individual leaderboard.
@@ -641,10 +641,10 @@
         </div>
         <div class="more-stories-item clearfix row">
           <figure>
-            <img src="img/more-stories2.png" alt="" data-rjs="2"/>
+            <a href="#"><img src="img/more-stories2.png" alt="" data-rjs="2"/></a>
           </figure>
           <div class="stories-content">
-            <h3>Sorenson: Super Tuesday Winners & Losers</h3>
+            <a href="#"><h3>Sorenson: Super Tuesday Winners & Losers</h3></a>
             <span>Eric Sorenson - March 15, 2016</span>
             <p>
               With a lot of nearby rivals facing each other, Super Tuesday in college baseball was a hard fought battle of familiar foes on the diamond.
@@ -653,10 +653,10 @@
         </div>
         <div class="more-stories-item clearfix row">
           <figure>
-            <img src="img/more-stories3.png" alt="" data-rjs="2"/>
+            <a href="#"><img src="img/more-stories3.png" alt="" data-rjs="2"/></a>
           </figure>
           <div class="stories-content">
-            <h3>GSA Spotlight: Virginia’s Matt Thaiss</h3>
+            <a href="#"><h3>GSA Spotlight: Virginia’s Matt Thaiss</h3></a>
             <span>Aaron Fitt - March 15, 2016</span>
             <p>
               Matt Thaiss is the emotional leader for the reigning national champion Cavaliers, and he's worked hard to become one of the best all-around catchers in college baseball.
@@ -665,10 +665,10 @@
         </div>
         <div class="more-stories-item clearfix row">
           <figure>
-            <img src="img/more-stories4.png" alt="" data-rjs="2"/>
+            <a href="#"><img src="img/more-stories4.png" alt="" data-rjs="2"/></a>
           </figure>
           <div class="stories-content">
-            <h3>Week 4 Power Rankings: Relief Pitchers</h3>
+            <a href="#"><h3>Week 4 Power Rankings: Relief Pitchers</h3></a>
             <span>D1 Baseball Staff - March 15, 2016</span>
             <p>
               Ryan Hendrix has been dominant over the first month for Texas A&M, moving him to the top of our power rankings for relievers.

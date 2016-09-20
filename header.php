@@ -139,7 +139,7 @@
           </div>
 
           <div class="ad">
-            <img src="img/ad-728x90.png" alt="" data-rjs="2"/>
+            <a href="#"><img src="img/ad-728x90.png" alt="" data-rjs="2"/></a>
           </div>
 
           <div class="container mobile-hidden">

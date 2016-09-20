@@ -104,6 +104,10 @@ h1, h2, h3, h4, h5, h6, p, a, span, li, td, input, div, figcaption, select, opti
   color: rgba(74, 74, 74, 1.0);
 }
 
+a {
+  text-decoration: none;
+}
+
 .mobile-visible {
   display: none !important;
 }
@@ -557,6 +561,10 @@ header nav.nav-social a {
   text-transform: uppercase;
 }
 
+header nav.nav-social a:hover, header nav.nav-account a:hover {
+  color: rgba(43, 113, 56, 1.0);
+}
+
 header nav.nav-main {
   background: rgba(43, 113, 56, 1.0);
   height: 22px;
@@ -625,6 +633,10 @@ header nav.nav-main .pull-right a {
   font-size: 14px;
   padding: 14px 36px;
   text-decoration: none;
+}
+
+#wrap .button-container a:hover {
+  background: rgba(219, 219, 219, 1.0);
 }
 
 #wrap .row + .row {
@@ -745,7 +757,7 @@ header nav.nav-main .pull-right a {
   margin-top: 0;
 }
 
-#wrap .data-table a {
+#wrap .data-table a:not(.read-more) {
   color: rgba(43, 113, 56, 1.0);
   font-size: 14px;
   text-decoration: none;
@@ -934,6 +946,14 @@ header nav.nav-main .pull-right a {
   width: 100%;
 }
 
+#wrap main .headline-photo h2 {
+  margin: 10px 0;
+}
+
+#wrap main .headline-photo a:hover h2 {
+  color: rgba(43, 113, 56, 1.0);
+}
+
 #wrap main .caption {
   color: rgba(155, 155, 155, 1.0);
   float: right;
@@ -953,6 +973,10 @@ header nav.nav-main .pull-right a {
 
 #wrap main h1.post-title {
   color: rgba(74, 74, 74, 1.0);
+}
+
+#wrap main a:hover h1.post-title {
+  color: rgba(43, 113, 56, 1.0);
 }
 
 #wrap main .categories {
@@ -1022,6 +1046,10 @@ header nav.nav-main .pull-right a {
 
 #wrap .teasers h3 {
   margin-top: 6px;
+}
+
+#wrap a:hover h3 {
+  color: rgba(43, 113, 56, 1.0);
 }
 
 #wrap .trending {
@@ -1144,6 +1172,10 @@ header nav.nav-main .pull-right a {
 #wrap.article .post-navigation > div {
   width: 150px;
   white-space: nowrap;
+}
+
+#wrap.article .post-navigation > div:hover * {
+  color: rgba(43, 113, 56, 1.0);
 }
 
 #wrap.article .post-navigation a {
@@ -1500,6 +1532,10 @@ header nav.nav-main .pull-right a {
 #wrap.player-profile h5 {
   color: rgba(116, 115, 116, 1.0);
   margin-bottom: 0;
+}
+
+#wrap.player-profile a:hover h5 {
+  color: rgba(43, 113, 56, 1.0);
 }
 
 
@@ -2056,6 +2092,10 @@ footer nav a {
   font-size: 16px;
   text-decoration: none;
   padding: 4px 12px;
+}
+
+footer nav a:hover {
+  color: rgba(43, 113, 56, 1.0);
 }
 
 footer nav a:last-child {

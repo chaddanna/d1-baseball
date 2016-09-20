@@ -15,7 +15,7 @@
       </nav>
 
       <div class="ad pull-right mobile-hidden">
-        <img src="img/ad-728x90.png" alt="" data-rjs="2"/>
+        <a href="#"><img src="img/ad-728x90.png" alt="" data-rjs="2"/></a>
       </div>
     </div>
 

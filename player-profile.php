@@ -163,30 +163,42 @@
         <div class="wire clearfix">
           <div class="half pull-left">
             <div>
-              <h5>Rogers: Toasting To Vintage Lange</h5>
-              <span class="byline">Kendall Rogers - March 16, 2016</span>
+              <a href="#">
+                <h5>Rogers: Toasting To Vintage Lange</h5>
+                <span class="byline">Kendall Rogers - March 16, 2016</span>
+              </a>
             </div>
             <div>
-              <h5>LSU’s Lange, UF’s Puk Magical</h5>
-              <span class="byline">Kendall Rogers - March 16, 2016</span>
+              <a href="#">
+                <h5>LSU’s Lange, UF’s Puk Magical</h5>
+                <span class="byline">Kendall Rogers - March 16, 2016</span>
+              </a>
             </div>
             <div>
-              <h5>D1Baseball’s Dream Draft</h5>
-              <span class="byline">D1 Baseball Staff - March 16, 2016</span>
+              <a href="#">
+                <h5>D1Baseball’s Dream Draft</h5>
+                <span class="byline">D1 Baseball Staff - March 16, 2016</span>
+              </a>
             </div>
           </div>
           <div class="half pull-left">
             <div>
-              <h5>May 13 Top Performers</h5>
-              <span class="byline">D1 Baseball Staff - March 16, 2016</span>
+              <a href="#">
+                <h5>May 13 Top Performers</h5>
+                <span class="byline">D1 Baseball Staff - March 16, 2016</span>
+              </a>
             </div>
             <div>
-              <h5>Ten Thoughts: Friday, April 29</h5>
-              <span class="byline">Kendall Rogers - March 16, 2016</span>
+              <a href="#">
+                <h5>Ten Thoughts: Friday, April 29</h5>
+                <span class="byline">Kendall Rogers - March 16, 2016</span>
+              </a>
             </div>
             <div>
-              <h5>Stat Roundup: April 29 Top Performers</h5>
-              <span class="byline">D1 Baseball Staff - March 16, 2016</span>
+              <a href="#">
+                <h5>Stat Roundup: April 29 Top Performers</h5>
+                <span class="byline">D1 Baseball Staff - March 16, 2016</span>
+              </a>
             </div>
           </div>
         </div>

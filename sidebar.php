@@ -100,7 +100,7 @@
   </section>
 
   <section class="ad">
-    <img src="img/ad-300x250.png" alt="" data-rjs="2"/>
+    <a href="#"><img src="img/ad-300x250.png" alt="" data-rjs="2"/></a>
   </section>
 
   <section>
@@ -308,6 +308,6 @@
 
 
   <div class="ad">
-    <img src="img/ad-300x250.png" alt="" data-rjs="2"/>
+    <a href="#"><img src="img/ad-300x250.png" alt="" data-rjs="2"/></a>
   </div>
 </aside>

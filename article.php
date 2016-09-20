@@ -147,30 +147,38 @@
           <div class="row">
             <div class="teaser-item">
               <figure>
-                <img src="img/teaser1.png" alt="" data-rjs="2"/>
-                <h3>College Prospect Notebook: Week Four</h3>
+                <a href="#">
+                  <img src="img/teaser1.png" alt="" data-rjs="2"/>
+                  <h3>College Prospect Notebook: Week Four</h3>
+                </a>
               </figure>
             </div>
 
             <div class="teaser-item">
               <figure>
-                <img src="img/teaser2.png" alt="" data-rjs="2"/>
-                <h3>D1 Baseball Top 25 Rankings: March 14</h3>
+                <a href="#">
+                  <img src="img/teaser2.png" alt="" data-rjs="2"/>
+                  <h3>D1 Baseball Top 25 Rankings: March 14</h3>
+                </a>
               </figure>
             </div>
           </div>
           <div class="row">
             <div class="teaser-item">
               <figure>
-                <img src="img/teaser3.png" alt="" data-rjs="2"/>
-                <h3>Weekly College Baseball Chat: March 14</h3>
+                <a href="#">
+                  <img src="img/teaser3.png" alt="" data-rjs="2"/>
+                  <h3>Weekly College Baseball Chat: March 14</h3>
+                </a>
               </figure>
             </div>
 
             <div class="teaser-item">
               <figure>
-                <img src="img/teaser4.png" alt="" data-rjs="2"/>
-                <h3>Stat Roundup: March 13 Top Performers</h3>
+                <a href="#">
+                  <img src="img/teaser4.png" alt="" data-rjs="2"/>
+                  <h3>Stat Roundup: March 13 Top Performers</h3>
+                </a>
               </figure>
             </div>
           </div>
