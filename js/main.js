@@ -1,6 +1,14 @@
 $(function() {
+	//mobile navigation toggle
+	$("#nav-toggle").click( function() {
+		$("#mobile-menu").toggleClass("active");
+		
+		$("#nav-toggle i").toggleClass("fa-bars");
+		$("#nav-toggle i").toggleClass("fa-close");
+	});
+
   //tabs
-	$('ul.tabs li').click(function(){
+	$('ul.tabs li').click( function() {
 		var tab_id = $(this).attr('data-tab');
 
 		$('ul.tabs li').removeClass('current');
@@ -8,7 +16,7 @@ $(function() {
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
-	})
+	});
 
   //retina
   retinajs();
@@ -34,7 +42,7 @@ $(function() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           infinite: true,
         }
       },

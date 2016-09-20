@@ -31,7 +31,7 @@
               <div class="logo pull-left">
                 <a href="http://www.d1baseball.com/">
                   <object data="img/logo.svg" type="image/svg+xml">
-                    <img src="img/logo.png" alt="D1Baseball.com">
+                    <img src="img/logo.png" alt="D1Baseball.com" data-rjs="2">
                   </object>
                 </a>
               </div>
@@ -90,12 +90,15 @@
               </div>
             </div>
           </div>
+
           <div class="fixed-position mobile-visible">
             <div class="clearfix nav-main">
-              <a class="nav-toggle pull-left">
+              <a id="nav-toggle" class="nav-toggle pull-left">
                 <i class="fa fa-bars" aria-hidden="true"></i>
               </a>
-              <a href="#" class="pull-left logo">D1BASEBALL<span>.com</span></a>
+              <a href="#" class="pull-left logo">
+                <img src="img/logo-mobile.png" alt="D1Baseball.com" data-rjs="2">
+              </a>
               <a href="#" class="subscribe pull-right">Subscribe</a>
             </div>
 
@@ -106,6 +109,35 @@
               <a href="#" class="bold">Login</a>
             </nav>
           </div>
+
+
+          <div id="mobile-menu" class="mobile-visible fixed-position">
+            <form action="">
+              <input type="text" id="search-field" name="search-field" value="">
+              <label for="search-field">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </label>
+            </form>
+
+            <nav>
+              <h3>Navigation</h3>
+              <a href="#" class="semi-bold">Shop</a>
+              <a href="#" class="semi-bold">Subscribe</a>
+              <a href="#">Scores &gt;</a>
+              <a href="#">Standings &gt;</a>
+              <a href="#">Top 25</a>
+              <a href="#">Forum</a>
+              <a href="#">Prospects</a>
+              <a href="#">Recruiting</a>
+              <a href="#">Teams &gt;</a>
+              <a href="#">Conferences &gt;</a>
+              <a href="#">Player Search</a>
+              <a href="#">Player Power Rankings &gt;</a>
+              <a href="#">Kendall Rogers</a>
+              <a href="#">Aaron Fitt</a>
+            </nav>
+          </div>
+
           <div class="ad">
             <img src="img/ad-728x90.png" alt="" data-rjs="2"/>
           </div>
