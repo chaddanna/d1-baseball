@@ -1055,6 +1055,7 @@ header nav.nav-main .pull-right a {
 #wrap .trending {
   border-bottom: 2px solid rgba(239, 239, 239, 1.0);
   margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 #wrap .trending .row {

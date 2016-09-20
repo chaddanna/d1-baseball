@@ -71,9 +71,11 @@
         <div class="row">
           <div class="trending-item">
             <figure>
-              <a href="#"><img src="img/trending1.png" alt="" data-rjs="2"/></a>
+              <a href="#">
+                <img src="img/trending1.png" alt="" data-rjs="2"/>
+                <h3>Sorenson: Off The Top Of My Head</h3>
+              </a>
             </figure>
-            <a href="#"><h3>Sorenson: Off The Top Of My Head</h3></a>
             <span>Eric Sorenson - March 16, 2016</span>
             <p>
               In his weekly look at the national scene, Eric Sorenson reminisces about some famous upsets and looks ahead to a nice slate of mid-major showdowns in the Southeastern Conference.
@@ -82,9 +84,11 @@
 
           <div class="trending-item">
             <figure>
-              <a href="#"><img src="img/trending2.png" alt="" data-rjs="2"/></a>
+              <a href="#">
+                <img src="img/trending2.png" alt="" data-rjs="2"/>
+                <h3>2016 D1Baseball Freshman All-Americans</h3>
+              </a>
             </figure>
-            <a href="#"><h3>2016 D1Baseball Freshman All-Americans</h3></a>
             <span>D1 Baseball Staff - March 16, 2016</span>
             <p>
               Clemson's Seth Beer, D1Baseball's Freshman of the Year, headlines our Freshman All-America teams.
@@ -94,9 +98,11 @@
         <div class="row">
           <div class="trending-item">
             <figure>
-              <a href="#"><img src="img/trending3.png" alt="" data-rjs="2"/></a>
+              <a href="#">
+                <img src="img/trending3.png" alt="" data-rjs="2"/>
+                <h3>Cape Buzz: USD’s Sprengel Shows Promise</h3>
+              </a>
             </figure>
-            <a href="#"><h3>Cape Buzz: USD’s Sprengel Shows Promise</h3></a>
             <span>Frankie Piliere - March 16, 2016</span>
             <p>
               In our latest batch of Cape Cod League scouting notes, we detail Nick Sprengel's outing and other intriguing performances from Tuesday.
@@ -105,9 +111,11 @@
 
           <div class="trending-item">
             <figure>
-              <a href="#"><img src="img/trending4.png" alt="" data-rjs="2"/></a>
+              <a href="#">
+                <img src="img/trending4.png" alt="" data-rjs="2"/>
+                <h3>Early Predictions: Eight For Omaha In 2017</h3>
+              </a>
             </figure>
-            <a href="#"><h3>Early Predictions: Eight For Omaha In 2017</h3></a>
             <span>D1 Baseball Staff - March 16, 2016</span>
             <p>
               With the 2016 College World Series wrapped up, Aaron Fitt and Kendall Rogers unveil their way early Omaha Eight teams for 2017.
