@@ -1879,6 +1879,10 @@ header nav.nav-main .pull-right a {
   text-decoration: none;
 }
 
+#wrap.user-account .button:hover {
+  background: rgba(219, 219, 219, 1.0);
+}
+
 #wrap .account-info table {
   margin-top: 30px;
 }
@@ -1945,6 +1949,10 @@ header nav.nav-main .pull-right a {
   padding: 15px 58px;
   font-weight: 900;
   text-decoration: none;
+}
+
+#wrap .subscription a.switch:hover {
+  background: rgba(33, 103, 46, 1.0);
 }
 
 /*
