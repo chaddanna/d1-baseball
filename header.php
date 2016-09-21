@@ -143,29 +143,29 @@
           </div>
 
           <div class="container mobile-hidden">
-            <nav class="nav-social pull-left">
-              <a href="#">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="#">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="#">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="#">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-              </a>
-            </nav>
+            <div class="clearfix">
+              <nav class="nav-social pull-left">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+              </nav>
 
-            <nav class="nav-account pull-right">
-              <a href="#">Sign In / Register</a>
-              <a href="#">My Account</a>
-            </nav>
+              <nav class="nav-account pull-right">
+                <a href="#">Sign In / Register</a>
+                <a href="#">My Account</a>
+              </nav>
+            </div>
 
-            <div class="clearfix"></div>
-
-            <nav id="sticker" class="nav-main">
+            <nav id="sticker" class="nav-main clearfix">
               <div class="pull-left">
                 <a href="#">Scores</a>
                 <a href="#">Standings</a>
@@ -173,7 +173,67 @@
                 <a href="#">Forum</a>
                 <a href="#">Prospects</a>
                 <a href="#">Recruiting</a>
-                <a href="#">Teams</a>
+                <div class="dropdown">
+                  <a href="#">Teams</a>
+                  <div class="dropdown-content container">
+                    <div class="clearfix">
+                      <ul class="pull-left">
+                        <li><a href="#">ACC</li>
+                        <li><a href="#">America East</a></li>
+                        <li><a href="#">American Athletic</a></li>
+                        <li><a href="#">Atlantic 10</a></li>
+                        <li><a href="#">Atlantic Sun</a></li>
+                        <li><a href="#">Big Ten</a></li>
+                        <li><a href="#">Big 12</a></li>
+                        <li><a href="#">Big East</a></li>
+                        <li><a href="#">Big South</a></li>
+                        <li><a href="#">Big West</a></li>
+                        <li><a href="#">Colonial</a></li>
+                        <li><a href="#">Conference USA</a></li>
+                        <li><a href="#">Horizon</a></li>
+                        <li><a href="#">Independents</a></li>
+                        <li><a href="#">Ivy</a></li>
+                        <li><a href="#">Metro Atlantic</a></li>
+                      </ul>
+                      <ul class="pull-left">
+                        <li><a href="#">Mid-American</a></li>
+                        <li><a href="#">Mid-Eastern</a></li>
+                        <li><a href="#">Missouri Valley</a></li>
+                        <li><a href="#">Mountain West</a></li>
+                        <li><a href="#">Northeast</a></li>
+                        <li><a href="#">Ohio Valley</a></li>
+                        <li><a href="#">Pac 12</a></li>
+                        <li><a href="#">Patriot</a></li>
+                        <li><a href="#">SEC</a></li>
+                        <li><a href="#">Southern</a></li>
+                        <li><a href="#">Southland</a></li>
+                        <li><a href="#">Summit</a></li>
+                        <li><a href="#">Sun Belt</a></li>
+                        <li><a href="#">SWAC</a></li>
+                        <li><a href="#">WAC</a></li>
+                        <li><a href="#">West Coast</a></li>
+                      </ul>
+                      <div class="school pull-left">
+                        <ul>
+                          <li><a href="#">Alabama</a></li>
+                          <li><a href="#">Arkansas</a></li>
+                          <li><a href="#">Auburn</a></li>
+                          <li><a href="#">Florida</a></li>
+                          <li><a href="#">Georgia</a></li>
+                          <li><a href="#">Kentucky</a></li>
+                          <li><a href="#">LSU</a></li>
+                          <li><a href="#">Missouri</a></li>
+                          <li><a href="#">Mississippi State</a></li>
+                          <li><a href="#">Ole Miss</a></li>
+                          <li><a href="#">South Carolina</a></li>
+                          <li><a href="#">Tennessee</a></li>
+                          <li><a href="#">Texas A&M</a></li>
+                          <li><a href="#">Vanderbilt</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <a href="#">
                   <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </a>
